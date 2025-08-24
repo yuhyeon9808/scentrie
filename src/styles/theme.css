@@ -1,0 +1,32 @@
+@theme {
+  /* Breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 549px;
+  --breakpoint-md: 866px;
+  --breakpoint-lg: 1150px;
+
+  /* Colors */
+  --color-primary-p: #2a1d39;
+  --color-primary-w: #fffafa;
+  --color-sub-bg: #faf7ef;
+  --color-subtitle: #1f1d1d;
+  --color-muted: #848382;
+
+  /* Font sizes */
+  --text-font-64: 4rem;
+  --text-font-48: 3rem;
+  --text-font-40: 2.5rem;
+  --text-font-32: 2rem;
+  --text-font-24: 1.5rem;
+  --text-font-20: 1.25rem;
+  --text-font-16: 1rem;
+
+  /* Custom spacing  */
+  --spacing-header-middle-lg: 6.25rem;
+  --spacing-header-middle-md: 3rem;
+  --spacing-header-middle-sm: 2rem;
+  --spacing-header-middle-base: 1rem;
+
+  --spacing-main-section-y: 6rem;
+  --spacing-main-title-b: 4rem;
+}

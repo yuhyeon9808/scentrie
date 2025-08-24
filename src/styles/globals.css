@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+@import './theme.css';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html,
+body {
+  width: 100%;
+  background: #2a1d39;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  color: #fffafa;
+  user-select: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d4b2c2 !important;
+}
+
+.magazine-swiper {
+  padding-bottom: 2rem !important;
+}
+
+.rail {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 234px;
+}
+
+@media (min-width: 549px) {
+  .rail {
+    max-width: 534px;
+  }
+}
+
+@media (min-width: 866px) {
+  .rail {
+    max-width: 818px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .rail {
+    max-width: 1102px;
+  }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  visibility: hidden;
+}
+
+input[type='date']::-moz-calendar-picker-indicator {
+  opacity: 0;
+  visibility: hidden;
+}

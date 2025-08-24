@@ -1,0 +1,48 @@
+{
+  "name": "scentrie",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "@headlessui/react": "^2.2.7",
+    "@react-oauth/google": "^0.12.2",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "2.55.0",
+    "@tanstack/react-query": "^5.84.1",
+    "lodash": "^4.17.21",
+    "next": "15.4.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swiper": "^11.2.10",
+    "zustand": "^5.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tanstack/react-query-devtools": "^5.84.1",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^20.19.11",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "daisyui": "^5.0.50",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "playwright": "^1.54.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}
