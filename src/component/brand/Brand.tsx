@@ -35,7 +35,7 @@ function BrandSkeleton({ activeMenu }: { activeMenu: string }) {
   );
 }
 
-export default function Brand() {
+export default function Brand({ brand }: { brand: string }) {
   const { isLoading, error } = usePerfumes();
   const activeMenu = useUIStore((s) => s.activeMenu);
   const setActiveMenu = useUIStore((s) => s.setActiveMenu);
@@ -61,6 +61,7 @@ export default function Brand() {
                 setActiveMenu(brand.name);
               }}
               menu
+              href={`/brand/${encodeURIComponent(brand.name)}`}
             />
           ))}
         </div>

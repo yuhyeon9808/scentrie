@@ -59,7 +59,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
               {BRANDS.map((brand) => (
                 <li key={brand.id}>
                   <Link
-                    href="/brand"
+                    href={`/brand/${brand.name}`}
                     className={menuItemClass}
                     onClick={() => {
                       setActiveMenu(brand.name);
