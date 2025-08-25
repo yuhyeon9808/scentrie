@@ -14,9 +14,7 @@ export default function BrandPerfume() {
         <p>향수를 만나보세요.</p>
       </div>
 
-      <Link href="/brand">
-        <Brands />
-      </Link>
+      <Brands />
     </div>
   );
 }
