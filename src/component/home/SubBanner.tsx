@@ -21,7 +21,7 @@ export default function SubBanner() {
           <p>세르니에의 다양한 브랜드와 함께 </p>
           <p>당신을 위한 향을 만나보세요.</p>
           <div className="mt-4">
-            <EntryButton href="/product/41" variant="filled" />
+            <EntryButton href="/product/detail/41" variant="filled" />
           </div>
         </div>
       </div>
