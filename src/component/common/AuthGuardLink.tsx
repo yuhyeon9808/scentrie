@@ -19,6 +19,8 @@ export function GuardedLink({
   const handleClickCapture = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     const needsGuard = href.startsWith('/mypage') || href.startsWith('/cart');
 
+    onClickCapture?.(e);
+
     if (needsGuard) {
       e.preventDefault();
       const ok = await requireLogin(href);
@@ -27,8 +29,6 @@ export function GuardedLink({
       router.push(href);
       return;
     }
-
-    onClickCapture?.(e);
   };
 
   return (
