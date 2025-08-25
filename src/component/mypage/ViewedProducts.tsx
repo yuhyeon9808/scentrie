@@ -43,7 +43,7 @@ export default function ViewedProducts() {
                 <WhiteBtn
                   label="상품 보러 가기"
                   width={150}
-                  href={'/product/' + encodeURIComponent(item.id)}
+                  href={'/product/detail' + encodeURIComponent(item.id)}
                 />
               </div>
             </div>
