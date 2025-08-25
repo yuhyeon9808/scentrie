@@ -16,7 +16,7 @@ export default function Calendar({ value, onChange }: CalendarProps) {
       value={value}
       onClick={() => inputRef.current?.showPicker?.()}
       onChange={(e) => onChange(e.target.value)}
-      className="md:w-[255px] w-full border border-primary-w rounded-md py-3 pl-4 sm:pl-8 cursor-pointer select-none"
+      className="md:w-[255px] w-full  h-[50px] border border-primary-w rounded-md py-3 pl-4 sm:pl-8 cursor-pointer select-none"
     />
   );
 }
