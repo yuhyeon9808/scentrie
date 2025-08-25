@@ -46,7 +46,7 @@ export default function OrderList() {
 
   return (
     <div className=" w-full  ">
-      <div className="flex flex-col gap-4 py-6 sm:py-10 md:flex-row md:justify-between ">
+      <div className="flex flex-col gap-4 py-6 sm:py-14 md:flex-row md:justify-between ">
         <div className="hidden w-full lg:flex">
           <div className="flex w-full max-w-sm items-center justify-center gap-3 rounded-md border border-primary-w mr-5 ">
             <MonthBtn label="오늘" click={handleToday} />
