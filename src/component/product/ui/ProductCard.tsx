@@ -13,7 +13,8 @@ export default function ProductCard({ perfume }: { perfume: Perfume }) {
             alt={perfume.name}
             width={240}
             height={240}
-            className="mt-4 w-full max-h-[240px] object-contain"
+            style={{ width: 'auto' }}
+            className="mt-4 max-h-[240px] object-contain"
           />
           <p className="mt-2 font-semibold text-font-16">{perfume.name}</p>
           <p className="mt-2 font-bold text-font-16 sm:text-font-20">

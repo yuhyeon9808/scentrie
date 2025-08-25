@@ -83,7 +83,7 @@ export default function OrderList() {
                   </div>
 
                   {variant && (
-                    <div className="flex flex-col gap-4 px-4 pb-4 sm:px-6 md:flex-row md:items-start md:gap-6 mt-8">
+                    <div className="flex flex-col gap-4 px-4 pb-4 sm:px-6 md:flex-row  md:gap-10 mt-8">
                       <div className="relative w-full h-[200px] sm:h-[240px] md:w-[260px] md:h-[260px] rounded-md bg-sub-bg ">
                         <Image
                           src={
@@ -97,7 +97,7 @@ export default function OrderList() {
                         />
                       </div>
 
-                      <div className="flex flex-1 flex-col justify-center gap-2 sm:gap-3">
+                      <div className="flex flex-1 flex-col justify-center gap-2 sm:gap-4">
                         <div className="flex md:flex-row flex-col text-font-20 sm:text-font-24 font-bold">
                           <span>
                             {`[${variant.Perfumes.Brands.name}]`}&nbsp;

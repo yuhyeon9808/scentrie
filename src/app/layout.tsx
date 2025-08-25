@@ -1,5 +1,4 @@
 import '@/styles/globals.css';
-
 import './core/config/fontawesome';
 
 import { Providers } from './providers';
@@ -23,6 +22,12 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        />
+      </head>
       <body>
         <GoogleOAuthProvider clientId="902938857309-77c0hv2d0mcth4abrjqqv0h0mpqtfko0.apps.googleusercontent.com">
           <Providers>

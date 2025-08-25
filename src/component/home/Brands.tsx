@@ -20,14 +20,20 @@ export default function Brands() {
             src={white}
             alt={name}
             fill
-            sizes="100vw"
+            sizes="(max-width: 640px) 100vw, 
+                  (max-width: 1024px) 50vw, 
+                  (max-width: 1280px) 33vw, 
+                  25vw"
             className="block object-contain px-6 py-7 lg:px-7 lg:py-10 group-hover:hidden"
           />
           <Image
             src={black}
             alt={name}
             fill
-            sizes="100vw"
+            sizes="(max-width: 640px) 100vw, 
+                  (max-width: 1024px) 50vw, 
+                  (max-width: 1280px) 33vw, 
+                  25vw"
             className="hidden object-contain px-6 py-7 lg:px-7 lg:py-10 group-hover:block"
           />
         </div>

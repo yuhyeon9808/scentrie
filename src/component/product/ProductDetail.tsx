@@ -50,13 +50,13 @@ export default function ProductDetail({ perfume }: { perfume: PerfumeById }) {
       <div className="flex flex-col lg:flex-row lg:items-start lg:gap-15 sm:py-28 py-14">
         <div className="lg:w-[480px]">
           <div className="lg:sticky lg:top-28">
-            <div className="relative aspect-square w-full rounded-lg bg-sub-bg overflow-hidden">
+            <div className="relative aspect-square w-full rounded-lg bg-sub-bg ">
               <Image
                 src={imageSrc!}
                 alt={perfume.name}
-                width={520}
-                height={520}
-                className="m-auto h-auto w-full rounded-lg object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 520px"
+                className="rounded-lg object-cover"
               />
             </div>
           </div>
