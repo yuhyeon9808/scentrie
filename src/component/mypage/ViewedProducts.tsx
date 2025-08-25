@@ -35,7 +35,7 @@ export default function ViewedProducts() {
                   className="w-[270px] h-[270px]"
                 />
               </div>
-              <div className="flex flex-col justify-center self-start sm:gap-10 gap-5 text-font-2 lg:ml-14 mt-5 lg:mt-0 text-font-20">
+              <div className="flex flex-col justify-center  sm:gap-10 gap-5 text-font-2 lg:ml-14 mt-5 lg:mt-0 text-font-20">
                 <div className="sm:text-font-24 text-font-20 font-semibold ">
                   <span className="block md:inline-block">{`[ ${item.brand} ]`}</span>
                   <span>{` ${item.name}`}</span>
