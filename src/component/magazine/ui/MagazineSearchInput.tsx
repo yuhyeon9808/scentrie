@@ -19,7 +19,7 @@ export default function MagazineSearchInput({
       <input
         type="text"
         placeholder="검색"
-        className="mr-3 rounded-md border px-5 py-2"
+        className="w-[215px] sm:w-[250px] mr-3 rounded-md border px-5 py-2"
         name="search"
         value={searchWord}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
