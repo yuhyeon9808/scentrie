@@ -24,8 +24,14 @@ export default function InfoUpdate({
   const [open, setOpen] = useState(false);
   const isPassword = field === 'password';
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    await action(formData);
+  };
+
   return (
-    <form action={action} className="divide-y divide-text-primary-w">
+    <form className="divide-y divide-text-primary-w" onSubmit={handleSubmit}>
       <input type="hidden" name="field" value={field} />
 
       <div className="h-full flex justify-between pt-5 pb-6">
