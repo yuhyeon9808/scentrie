@@ -12,7 +12,7 @@ interface Address {
 export default function AddressInput({
   onChange,
 }: {
-  onChange: (addr: Address) => void;
+  onChange?: (addr: Address) => void;
 }) {
   const [zip, setZip] = useState('');
   const [addr1, setAddr1] = useState('');
@@ -20,7 +20,7 @@ export default function AddressInput({
   const readyRef = useRef(false);
 
   useEffect(() => {
-    onChange({ zip, addr1, addr2 });
+    onChange?.({ zip, addr1, addr2 });
   }, [zip, addr1, addr2, onChange]);
 
   useEffect(() => {
