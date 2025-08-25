@@ -29,7 +29,7 @@ export default function SearchInput() {
           const selected = data.find((p) => p.name === value);
           if (selected) {
             setSearchInput('');
-            router.push(`/product/${selected.id}`);
+            router.push(`/product/detail/${selected.id}`);
           }
         }}
       >
