@@ -3,11 +3,25 @@ import Input from '@/component/common/Input';
 import WhiteBtn from '@/component/common/WhiteBtn';
 import React, { useEffect, useRef, useState } from 'react';
 
-export default function AddressInput() {
+interface Address {
+  zip: string;
+  addr1: string;
+  addr2: string;
+}
+
+export default function AddressInput({
+  onChange,
+}: {
+  onChange: (addr: Address) => void;
+}) {
   const [zip, setZip] = useState('');
   const [addr1, setAddr1] = useState('');
   const [addr2, setAddr2] = useState('');
   const readyRef = useRef(false);
+
+  useEffect(() => {
+    onChange({ zip, addr1, addr2 });
+  }, [zip, addr1, addr2, onChange]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 interface Props {
   type?: string;
@@ -8,11 +8,11 @@ interface Props {
   dValue?: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   name?: string;
-  autoComplete?: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
+  autoComplete?: React.InputHTMLAttributes<HTMLInputElement>['autoComplete'];
 }
 
 export default function Input({
-  type = "text",
+  type = 'text',
   placeholder,
   width,
   value,

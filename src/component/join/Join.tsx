@@ -20,7 +20,20 @@ export default function Join() {
     joinAction(formdata);
   };
 
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+  const [address, setAddress] = useState({ zip: '', addr1: '', addr2: '' });
+
+  const isFormValid =
+    email &&
+    password &&
+    name &&
+    phone &&
+    address.zip &&
+    address.addr1 &&
+    address.addr2;
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let value = e.target.value.replace(/[^0-9]/g, '');
@@ -53,6 +66,7 @@ export default function Join() {
             placeholder="아이디를 입력해주세요."
             type="email"
             name="email"
+            onChange={(e) => setEmail(e.target.value)}
           />
 
           <TextLabel label="비밀번호" />
@@ -60,10 +74,15 @@ export default function Join() {
             placeholder="비밀번호를 입력해주세요."
             type="password"
             name="password"
+            onChange={(e) => setPassword(e.target.value)}
           />
 
           <TextLabel label="이름" />
-          <Input placeholder="이름을 입력해주세요." name="name" />
+          <Input
+            placeholder="이름을 입력해주세요."
+            name="name"
+            onChange={(e) => setName(e.target.value)}
+          />
 
           <TextLabel label="전화번호" />
           <div className="flex items-center gap-3">
@@ -76,10 +95,10 @@ export default function Join() {
           </div>
 
           <TextLabel label="주소" />
-          <AddressInput />
+          <AddressInput onChange={setAddress} />
 
           <div className="mt-5" onClick={() => router.push('/login')}>
-            <BorderBtn type="submit" label="가입하기" />
+            <BorderBtn type="submit" label="가입하기" disabled={!isFormValid} />
           </div>
         </form>
       </div>
