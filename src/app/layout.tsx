@@ -28,7 +28,7 @@ export default async function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
         />
       </head>
-      <body>
+      <body className="min-h-svh grid grid-rows-[auto_1fr_auto]">
         <GoogleOAuthProvider clientId="902938857309-77c0hv2d0mcth4abrjqqv0h0mpqtfko0.apps.googleusercontent.com">
           <Providers>
             <Header />
