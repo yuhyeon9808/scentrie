@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface SkeletonProps {
   w?: number;
@@ -7,8 +7,8 @@ interface SkeletonProps {
 
 export default function Skeleton({ w, h = 362 }: SkeletonProps) {
   const style: React.CSSProperties = {
-    width: w ? `${w}px` : undefined,
-    height: h ? `${h}px` : undefined,
+    width: `${w}px`,
+    height: `${h}px`,
   };
 
   return (

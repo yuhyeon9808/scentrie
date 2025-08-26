@@ -8,7 +8,7 @@ import { FOOTERMENU, FOOTERSNS } from '@/app/core/constants/menuItem';
 
 export default function Footer() {
   return (
-    <footer className="flex items-center  h-[390px]  sm:px-header-middle-sm md:px-header-middle-md lg:px-header-middle-lg bg-[#1A0E27]">
+    <footer className="flex items-center  h-[390px] sm:px-header-middle-sm md:px-header-middle-md lg:px-header-middle-lg bg-[#1A0E27]">
       <div className="w-full flex flex-col sm:flex-row gap-5 sm:gap-0  justify-center sm:justify-between px-10 sm:px-0">
         <div className="flex flex-col gap-y-3">
           <Link href="/">

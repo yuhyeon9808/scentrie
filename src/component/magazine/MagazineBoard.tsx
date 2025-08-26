@@ -10,11 +10,21 @@ import MagazineSearchInput from './ui/MagazineSearchInput';
 
 function MagazineBoardSkeleton() {
   return (
-    <div className="w-full md:px-28">
+    <div className="w-full md:px-28 sm:min-h-[1143px] min-h-[943px]">
       <div className="flex flex-col items-center sm:py-28 py-14">
         <span className="pb-14 font-medium text-font-48">MAGAZINE</span>
         <div className="mb-7 w-full">
-          <div className="skeleton h-[320px] w-full"></div>
+          <div className="skeleton h-[512px] w-full"></div>
+        </div>
+        <div className="my-10 self-end"></div>
+        <div className="flex">
+          <input
+            type="text"
+            placeholder="검색"
+            className="w-[215px] sm:w-[250px] mr-3 rounded-md border px-5 py-2"
+            name="search"
+          />
+          <WhiteBtn label="찾기" font={16} type="submit" />
         </div>
       </div>
     </div>

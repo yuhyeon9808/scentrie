@@ -67,8 +67,8 @@ export default function ProductCardList({
 
   if (isLoading) {
     return (
-      <div className="w-full mx-auto">
-        <div className="w-full rail flex flex-wrap sm:gap-[34px] gap-[16px]">
+      <div className="w-full mx-auto ">
+        <div className="w-full min-h-[432px] rail flex flex-wrap sm:gap-[34px] gap-[16px]">
           {Array.from({ length: 4 }).map((_, idx) => (
             <Skeleton key={idx} />
           ))}
@@ -80,7 +80,7 @@ export default function ProductCardList({
   if (isLimited) {
     return (
       <section className="w-full">
-        <div className="rail mx-auto">
+        <div className="rail mx-auto min-h-[432px]">
           <Swiper
             modules={[Pagination]}
             pagination={{ clickable: true }}

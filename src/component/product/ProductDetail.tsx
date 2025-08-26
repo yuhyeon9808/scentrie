@@ -46,7 +46,7 @@ export default function ProductDetail({ perfume }: { perfume: PerfumeById }) {
   };
 
   return (
-    <div className="flex justify-center px-6 sm:px-16 md:px-20 xl:px-32">
+    <div className="flex justify-center px-6 sm:px-16 md:px-20 xl:px-32  min-h-[704px]">
       <div className="flex flex-col lg:flex-row lg:items-start lg:gap-15 sm:py-28 py-14">
         <div className="lg:w-[480px]">
           <div className="lg:sticky lg:top-28">
