@@ -1,5 +1,4 @@
 import '@/styles/globals.css';
-import './core/config/fontawesome';
 
 import { Providers } from './providers';
 import { GoogleOAuthProvider } from '@react-oauth/google';

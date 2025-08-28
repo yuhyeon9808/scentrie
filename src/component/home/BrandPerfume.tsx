@@ -1,6 +1,5 @@
 import React from 'react';
 import Brands from './Brands';
-import Link from 'next/link';
 
 export default function BrandPerfume() {
   return (

@@ -15,6 +15,9 @@ export default function ProductCard({ perfume }: { perfume: Perfume }) {
             height={240}
             style={{ width: 'auto' }}
             className="mt-4 max-h-[240px] object-contain"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABAABJzQnCgAAAABJRU5ErkJggg=="
+            priority
           />
           <p className="mt-2 font-semibold text-font-16">{perfume.name}</p>
           <p className="mt-2 font-bold text-font-16 sm:text-font-20">
