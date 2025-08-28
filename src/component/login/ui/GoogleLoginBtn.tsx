@@ -5,13 +5,10 @@ import { createSupabaseBrowserClient } from '@/app/core/config/supabase/supabase
 export default function GoogleLoginBtn() {
   const handleLogin = async () => {
     const supabase = createSupabaseBrowserClient();
-    const { data, error } = await supabase.auth.signInWithOAuth({
+    await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback` },
     });
-
-    console.log('data:', data);
-    console.log('error:', error);
   };
 
   return (

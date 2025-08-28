@@ -35,7 +35,7 @@ function BrandSkeleton({ activeMenu }: { activeMenu: string }) {
   );
 }
 
-export default function Brand({ brand }: { brand: string }) {
+export default function Brand() {
   const { isLoading, error } = usePerfumes();
   const activeMenu = useUIStore((s) => s.activeMenu);
   const setActiveMenu = useUIStore((s) => s.setActiveMenu);

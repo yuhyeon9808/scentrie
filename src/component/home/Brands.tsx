@@ -25,7 +25,7 @@ export default function Brands() {
                   (max-width: 1024px) 50vw, 
                   (max-width: 1280px) 33vw, 
                   25vw"
-              className="block object-contain px-6 py-7 lg:px-7 lg:py-10 group-hover:hidden"
+              className="block object-contain px-6 py-7 lg:px-7 lg:py-10 group-hover:hidden "
             />
             <Image
               src={black}
