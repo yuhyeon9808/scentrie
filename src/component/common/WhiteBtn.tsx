@@ -44,7 +44,7 @@ export default function WhiteBtn({
   const className = `${testSize} ${baseClass} ${loginSize}`;
 
   return href ? (
-    <Link href={href} className={className} style={style}>
+    <Link href={href} className={className} style={style} onClick={click}>
       {label}
     </Link>
   ) : (

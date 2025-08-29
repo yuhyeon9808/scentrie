@@ -5,6 +5,7 @@ import { CartItem } from '@/app/core/types/cart';
 import { BASE_URL } from '@/app/core/constants/etc';
 import Counter from './ui/Counter';
 import Modal from './ui/Modal';
+import { useUIStore } from '@/app/core/store/useUIStore';
 
 interface CartProps {
   items: CartItem[];
@@ -13,6 +14,8 @@ export default function Cart({ items }: CartProps) {
   const total = items.reduce((sum, it) => sum + it.price * it.quantity, 0);
   const fmt = (n: number) => n.toLocaleString('ko-KR');
 
+  const setActiveMenu = useUIStore((state) => state.setActiveMenu);
+
   if (items.length === 0)
     return (
       <div className="flex justify-center">
@@ -20,7 +23,12 @@ export default function Cart({ items }: CartProps) {
           <p className=" text-font-24 md:text-font-30">
             장바구니에 물품이 없습니다.
           </p>
-          <WhiteBtn label="담으러가기" width={150} href="/product" />
+          <WhiteBtn
+            label="담으러가기"
+            width={150}
+            href="/product/1"
+            click={() => setActiveMenu('전체 상품')}
+          />
         </div>
       </div>
     );

@@ -67,8 +67,8 @@ export default function CartView() {
           <WhiteBtn
             label="담으러가기"
             width={150}
-            href="/product/1"
             click={() => setActiveMenu('전체 상품')}
+            href="/product/1"
           />
         </div>
       </div>
