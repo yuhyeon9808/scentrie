@@ -27,7 +27,7 @@ export default function MenuTab({ tabs }: MenuTabProps) {
         className="absolute bottom-0 h-[2px] bg-primary-w transition-all duration-500"
         style={{ width: `${tabWidth}%`, left: `${segLeft}%` }}
       />
-      <div className="flex justify-around md:text-font-32 sm:text-font-24 text-font-20">
+      <div className="flex justify-around md:text-font-30 sm:text-font-24 text-font-20">
         {tabs.map((item, idx) => (
           <Link
             href={item.path}

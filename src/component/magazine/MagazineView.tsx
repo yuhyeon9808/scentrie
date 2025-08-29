@@ -18,7 +18,7 @@ export default function MagazineView({ magazine }: MagazineViewProps) {
     <div>
       <div className="flex flex-col items-center sm:py-28 py-14">
         <div className="md:w-[80%] w-[90%]">
-          <div className="flex self-start pb-7 font-bold text-font-32 select-text">
+          <div className="flex self-start pb-7 font-bold text-font-30 select-text">
             {magazine.title}
           </div>
           <div className="border-t pb-7" />

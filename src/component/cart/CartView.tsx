@@ -61,7 +61,7 @@ export default function CartView() {
     return (
       <div className="flex justify-center">
         <div className="flex flex-col gap-10 px-4 md:px-20 pt-28 pb-96 max-w-[1000px] w-full">
-          <p className=" text-font-24 md:text-font-32">
+          <p className=" text-font-24 md:text-font-30">
             장바구니에 물품이 없습니다.
           </p>
           <WhiteBtn

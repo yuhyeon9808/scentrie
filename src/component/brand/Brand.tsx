@@ -11,20 +11,20 @@ function BrandSkeleton({ activeMenu }: { activeMenu: string }) {
   return (
     <div className="w-full sm:py-28 py-14">
       <div className="flex flex-col items-center">
-        <span className="sm:text-font-48 text-font-32 leading-none mb-14 transition-opacity duration-150">
+        <span className="sm:text-font-48 text-font-30 leading-none mb-14 transition-opacity duration-150">
           {activeMenu}
         </span>
       </div>
 
       <div className="w-full mx-auto">
-        <div className="rail flex flex-wrap w-full gap-[16px] sm:gap-[34px] pb-14">
+        <div className="rail flex flex-wrap w-full gap-[34px] pb-14">
           {BRANDS.map((brand) => (
             <BorderBtn key={brand.id} label={brand.name} menu />
           ))}
         </div>
 
         <div className="w-full mx-auto">
-          <div className="rail flex flex-wrap w-full gap-[16px] sm:gap-[34px]">
+          <div className="rail flex flex-wrap w-full gap-[34px]">
             {Array.from({ length: 8 }).map((_, idx) => (
               <Skeleton key={idx} />
             ))}
@@ -46,13 +46,13 @@ export default function Brand() {
   return (
     <div className="w-full sm:py-28 py-14">
       <div className="flex flex-col items-center">
-        <span className="sm:text-font-48 text-font-32 leading-none mb-14 transition-opacity duration-150">
+        <span className="sm:text-font-48 text-font-30 leading-none mb-14 transition-opacity duration-150">
           {activeMenu}
         </span>
       </div>
 
       <div className="w-full mx-auto">
-        <div className="rail flex flex-wrap w-full gap-[16px] sm:gap-[34px] pb-14">
+        <div className="rail flex flex-wrap w-full gap-[34px] pb-14">
           {BRANDS.map((brand) => (
             <BorderBtn
               key={brand.id}

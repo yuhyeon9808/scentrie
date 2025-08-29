@@ -1,21 +1,11 @@
 import Link from 'next/link';
 
-interface EntryButtonProps {
-  href: string;
-  variant?: 'border' | 'filled';
-}
-
-export default function EntryButton({
-  href,
-  variant = 'border',
-}: EntryButtonProps) {
-  const style =
-    variant === 'border'
-      ? 'px-5 py-2 rounded-xl border-2 xl:text-font-20 text-font-16 hover:bg-primary-w hover:text-primary-p hover:border-none'
-      : 'px-5 py-2 rounded-xl bg-primary-p text-primary-w xl:text-font-20 text-font-16 hover:bg-primary-w hover:text-primary-p';
-
+export default function EntryButton({ href }: { href: string }) {
   return (
-    <Link href={href} className={style}>
+    <Link
+      href={href}
+      className="inline-block w-auto text-center font-semibold transition-colors duration-200 md:px-5 md:py-2 px-3 py-1 rounded-xl xl:text-font-20 text-font-16  border-2 border-primary-w text-primary-w hover:bg-primary-w hover:text-primary-p"
+    >
       바로가기 &gt;
     </Link>
   );

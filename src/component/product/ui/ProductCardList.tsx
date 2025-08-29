@@ -68,7 +68,7 @@ export default function ProductCardList({
   if (isLoading) {
     return (
       <div className="w-full mx-auto ">
-        <div className="w-full min-h-[432px] rail flex flex-wrap sm:gap-[34px] gap-[16px]">
+        <div className="w-full min-h-[432px] rail flex flex-wrap gap-[34px] ">
           {Array.from({ length: 4 }).map((_, idx) => (
             <Skeleton key={idx} />
           ))}
@@ -88,19 +88,17 @@ export default function ProductCardList({
             slidesPerView={2}
             slidesPerGroup={1}
             breakpoints={{
-              320: { slidesPerView: 1, slidesPerGroup: 1 },
-              548: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 12 },
-              582: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 34 },
+              0: { slidesPerView: 1, slidesPerGroup: 1 },
+              549: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 34 },
               866: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 34 },
               1150: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 34 },
             }}
             style={{ paddingBottom: 70 }}
+            className="flex justify-center"
           >
             {perfumes.map((p) => (
               <SwiperSlide key={p.id} className="w-full flex justify-center">
-                <div className="w-[250px]">
-                  <ProductCard perfume={p} />
-                </div>
+                <ProductCard perfume={p} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -112,8 +110,8 @@ export default function ProductCardList({
   if (list.length === 0) {
     return (
       <div className="w-full mx-auto">
-        <div className="w-full rail flex flex-wrap sm:gap-[34px] gap-[16px]">
-          <p className="mx-auto sm:py-28 py-14 text-font-32 opacity-80">
+        <div className="w-full rail flex flex-wrap gap-[34px]">
+          <p className="mx-auto sm:py-28 py-14 text-font-30 opacity-80">
             검색된 상품이 없습니다.
           </p>
         </div>
@@ -123,7 +121,7 @@ export default function ProductCardList({
 
   return (
     <div className="w-full mx-auto">
-      <div className="w-full rail flex flex-wrap sm:gap-[34px] gap-[16px]">
+      <div className="w-full rail flex flex-wrap gap-[34px] ">
         {paginated.map((p) => (
           <ProductCard perfume={p} key={p.id} />
         ))}

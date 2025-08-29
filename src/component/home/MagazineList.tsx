@@ -26,18 +26,19 @@ export default function MagazineList() {
   if (error) return <p>오류 발생: {(error as Error).message}</p>;
 
   return (
-    <div className="mx-auto w-full max-w-[1280px]">
+    <div className="mx-auto max-w-[310px] xl:max-w-[1272px] lg:max-w-[946px] md:max-w-[624px]">
       <Swiper
         modules={[Scrollbar]}
         spaceBetween={24}
         slidesPerView="auto"
         scrollbar={{ draggable: true }}
-        centeredSlides
-        centeredSlidesBounds
-        className="magazine-swiper"
+        centeredSlides={false}
+        centeredSlidesBounds={false}
+        watchOverflow
+        className="magazine-swiper "
       >
         {data.map((mag) => (
-          <SwiperSlide key={mag.id} className="!w-[300px]">
+          <SwiperSlide key={mag.id} className="!w-[300px] flex-shrink-0">
             <MagazineCard magazines={mag} />
           </SwiperSlide>
         ))}

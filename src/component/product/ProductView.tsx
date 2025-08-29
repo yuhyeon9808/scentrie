@@ -19,7 +19,7 @@ export default function ProductView({
     return (
       <div className="mx-auto w-full sm:py-28 py-14">
         <div className="flex justify-center">
-          <span className="mb-14 leading-none sm:text-font-48 text-font-32 opacity-0 font-medium">
+          <span className="mb-14 leading-none sm:text-font-48 text-font-30 opacity-0 font-medium">
             전체 상품
           </span>
         </div>
@@ -37,7 +37,7 @@ export default function ProductView({
   return (
     <div className="mx-auto w-full sm:py-28 py-14">
       <div className="rail flex flex-wrap justify-center gap-[34px]">
-        <span className="mb-14 leading-none sm:text-font-48 text-font-32 font-medium">
+        <span className="mb-14 leading-none sm:text-font-48 text-font-30 font-medium">
           {query ? query : '전체 상품'}
         </span>
       </div>

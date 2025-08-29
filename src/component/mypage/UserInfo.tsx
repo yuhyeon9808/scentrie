@@ -12,7 +12,7 @@ export default async function UserInfo() {
 
   return (
     <div className="flex flex-col py-14">
-      <span className="sm:text-font-40 text-font-32 font-bold">
+      <span className="sm:text-font-40 text-font-30 font-bold">
         PROFILE INFORMATION
       </span>
 
@@ -40,7 +40,7 @@ export default async function UserInfo() {
         />
       </div>
 
-      <span className="sm:text-font-40 text-font-32 font-bold pt-14">
+      <span className="sm:text-font-40 text-font-30 font-bold pt-14">
         SIGN IN & SECURITY
       </span>
 

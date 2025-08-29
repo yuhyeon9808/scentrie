@@ -21,7 +21,7 @@ export default function CheckOptions({ options, quizId }: OptionsProps) {
           <button
             key={item.label}
             onClick={() => setPick(quizId, item.category)}
-            className={`w-full rounded-md py-[60px] transition lg:text-font-32 md:text-font-24 sm:text-font-20 text-font-16 cursor-pointer ${
+            className={`w-full rounded-md py-[60px] transition lg:text-font-30 md:text-font-24 sm:text-font-20 text-font-16 cursor-pointer ${
               isActive
                 ? 'bg-primary-p text-primary-w  font-medium'
                 : 'bg-primary-w text-primary-p font-semibold border border-gray-300 hover:opacity-85'

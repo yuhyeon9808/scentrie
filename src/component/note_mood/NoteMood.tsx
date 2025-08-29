@@ -11,13 +11,13 @@ function NoteMoodSkeleton({ activeTab }: { activeTab: string }) {
   const tab = activeTab === '노트' ? NOTES : MOODS;
   return (
     <>
-      <div className="w-full mt-14 flex flex-wrap gap-[16px] sm:gap-[34px] pb-14">
+      <div className="w-full mt-14 flex flex-wrap gap-[34px] pb-14">
         {tab.map((item) => (
           <BorderBtn key={item.id} label={item.name} menu />
         ))}
       </div>
       <div className="mx-auto w-full">
-        <div className="w-full rail flex flex-wrap gap-[16px] sm:gap-[34px] pb-14">
+        <div className="w-full rail flex flex-wrap gap-[34px] pb-14">
           {Array.from({ length: 8 }).map((_, idx) => (
             <Skeleton key={idx} />
           ))}
@@ -41,7 +41,7 @@ export default function NoteMood({ activeTab }: { activeTab: string }) {
 
   return (
     <>
-      <div className="w-full mt-14 flex flex-wrap gap-[16px] sm:gap-[34px] pb-14">
+      <div className="w-full mt-14 flex flex-wrap gap-[34px] pb-14">
         {tab.map((item) => (
           <BorderBtn
             key={item.id}

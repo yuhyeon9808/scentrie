@@ -13,7 +13,7 @@ export default function PurpleBtn({ label, href, click, isAnswer }: BtnProps) {
     <Link
       href={href}
       onClick={click}
-      className="block w-full rounded-md py-4 text-center bg-primary-p text-primary-w md:text-font-32 sm:text-font-24 text-font-20 hover:opacity-80"
+      className="block w-full rounded-md py-4 text-center bg-primary-p text-primary-w md:text-font-30 sm:text-font-24 text-font-20 hover:opacity-80"
     >
       {label}
     </Link>
@@ -21,7 +21,7 @@ export default function PurpleBtn({ label, href, click, isAnswer }: BtnProps) {
     <button
       type="button"
       onClick={click}
-      className="block w-full rounded-md py-4 text-center bg-primary-p text-primary-w md:text-font-32 sm:text-font-24 text-font-20 hover:opacity-80"
+      className="block w-full rounded-md py-4 text-center bg-primary-p text-primary-w md:text-font-30 sm:text-font-24 text-font-20 hover:opacity-80"
       disabled={isAnswer}
     >
       {label}

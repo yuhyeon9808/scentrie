@@ -9,14 +9,14 @@ export default function ViewedProducts() {
 
   if (recent.length === 0)
     return (
-      <div className="flex justify-center py-56 opacity-80 text-font-32">
+      <div className="flex justify-center py-56 opacity-80 text-font-30">
         최근 본 상품이 없습니다.
       </div>
     );
 
   return (
     <div className="pt-14">
-      <span className="sm:text-font-40 text-font-32 font-bold ">
+      <span className="sm:text-font-40 text-font-30 font-bold ">
         VIEWED HISTORY
       </span>
       <div className="mt-14 border-t">

@@ -26,12 +26,12 @@ export default function FragranceFinderTest({ quiz }: QuizProps) {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex w-full flex-col items-center my-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-32 lg:w-[80%]">
+      <div className="flex w-full flex-col items-center my-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-30 lg:w-[80%]">
         <div className="w-full px-6 xl:w-[1000px]">
-          <span className="block sm:pt-28 pt-14 pb-5 font-semibold text-subtitle text-font-24 sm:text-font-32 md:text-font-48 lg:pb-7 lg:text-font-64">
+          <span className="block sm:pt-28 pt-14 pb-5 font-semibold text-subtitle text-font-24 sm:text-font-30 md:text-font-48 lg:pb-7 lg:text-font-64">
             {quiz.question}
           </span>
-          <p className="pb-14 text-font-16 sm:text-font-20 md:text-font-32">
+          <p className="pb-14 text-font-16 sm:text-font-20 md:text-font-30">
             {quiz.text}
           </p>
           <CheckOptions options={quiz.options} quizId={quiz.id} />

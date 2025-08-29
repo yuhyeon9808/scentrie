@@ -22,7 +22,7 @@ export default function RecommendOptions({ rec }: RecommendProps) {
           className="object-contain"
         />
         <div className="flex flex-col text-left gap-3 justify-center">
-          <span className="sm:text-font-32 text-font-24 text-subtitle font-bold">{`${item.brand} - ${item.name}`}</span>
+          <span className="sm:text-font-30 text-font-24 text-subtitle font-bold">{`${item.brand} - ${item.name}`}</span>
           <div className="md:text-font-24 sm:text-font-20 text-font-16">
             <span className="flex gap-2">{item.notes.join(', ')}</span>
             <p className="pt-3">{item.description}</p>

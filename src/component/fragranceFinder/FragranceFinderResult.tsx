@@ -35,7 +35,7 @@ export default function FragranceFinderResult({ item, rec }: Props) {
   if (!item) {
     return (
       <div className="flex flex-col items-center">
-        <div className="flex w-full flex-col items-center mt-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-32 lg:w-[80%]">
+        <div className="flex w-full flex-col items-center mt-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-30 lg:w-[80%]">
           <div className="w-full px-6 xl:w-[1000px] h-[1460px] sm:py-28 py-14"></div>
           <div className="w-full lg:w-[1000px] px-6  grid grid-cols-2 gap-8 sm:py-28 py-14">
             <BorderBtn label="테스트 다시하기" click={handleRestart} />
@@ -48,12 +48,12 @@ export default function FragranceFinderResult({ item, rec }: Props) {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex w-full flex-col items-center mt-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-32 lg:w-[80%]">
+      <div className="flex w-full flex-col items-center mt-28 h-auto rounded-md bg-sub-bg text-center text-muted text-font-30 lg:w-[80%]">
         <div className="w-full px-6 xl:w-[1000px] sm:py-28 py-14">
-          <div className="flex flex-col gap-2 font-bold text-subtitle lg:text-font-64 sm:text-font-48 text-font-32">
+          <div className="flex flex-col gap-2 font-bold text-subtitle lg:text-font-64 sm:text-font-48 text-font-30">
             <span className="block">{item.code}</span>
             <span className="block">{item.title}</span>
-            <p className="md:text-font-32 sm::text-font-24 sm:text-font-20 text-font-16 text-muted font-medium">
+            <p className="md:text-font-30 sm::text-font-24 sm:text-font-20 text-font-16 text-muted font-medium">
               {item.detail}
             </p>
             <p className="pb-14 md:text-font-24 sm:text-font-20 text-font-16 text-muted font-medium">

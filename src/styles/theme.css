@@ -6,7 +6,7 @@
   --breakpoint-lg: 1150px;
 
   /* Colors */
-  --color-primary-p: #2a1d39;
+  --color-primary-p: #1a0e27;
   --color-primary-w: #fffafa;
   --color-sub-bg: #faf7ef;
   --color-subtitle: #1f1d1d;
@@ -16,7 +16,7 @@
   --text-font-64: 4rem;
   --text-font-48: 3rem;
   --text-font-40: 2.5rem;
-  --text-font-32: 2rem;
+  --text-font-30: 1.875rem;
   --text-font-24: 1.5rem;
   --text-font-20: 1.25rem;
   --text-font-16: 1rem;
