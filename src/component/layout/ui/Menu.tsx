@@ -25,7 +25,7 @@ export default function Menu({ isOpen, onClose }: MenuProps) {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-40 min-h-svh w-[320px] transform bg-primary-p transition-transform duration-300 ${toggle}`}
+      className={`fixed top-0 left-0 z-40 min-h-fallback w-[320px] transform bg-primary-p transition-transform duration-300 ${toggle}`}
     >
       <button
         type="button"
