@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed z-20 flex h-[70px] w-full items-center justify-between px-1  sm:px-header-middle-sm md:px-header-middle-md lg:px-header-middle-lg bg-primary-p shadow-md">
+      <header className="fixed z-20 flex h-[70px] w-full items-center justify-between px-1  sm:px-header-middle-sm md:px-header-middle-md lg:px-header-middle-lg bg-primary-p shadow-xl">
         <div className="flex">
           <FontAwesomeIcon
             icon={faBars}
