@@ -18,10 +18,12 @@ export default function Login() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!email || !password) return; // 혹시 모르니 이중체크
+    if (!email || !password) return;
     const formdata = new FormData(e.currentTarget);
-    await loginAction(formdata);
-    window.location.href = next;
+    const result = await loginAction(formdata);
+    if (result) {
+      window.location.href = next;
+    }
   };
 
   const isDisabled = !email || !password;

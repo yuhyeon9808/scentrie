@@ -7,13 +7,13 @@ export async function loginAction(formData: FormData) {
   const email = String(formData.get('email'));
   const password = String(formData.get('password'));
 
-  const { error } = await supabase.auth.signInWithPassword({
+  const { data, error } = await supabase.auth.signInWithPassword({
     email,
     password,
   });
 
-  if (error) {
-    return { error: error.message };
+  if (error || !data.session) {
+    return;
   }
 
   return { success: true };
