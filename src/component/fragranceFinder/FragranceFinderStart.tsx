@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import finder from '@/assets/img/finder.png';
+import finder from '@/assets/img/finder2.png';
 import PurpleBtn from './ui/PurpleBtn';
 
 export default function FragranceFinderStart() {
