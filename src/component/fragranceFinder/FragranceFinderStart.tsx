@@ -6,7 +6,7 @@ import PurpleBtn from './ui/PurpleBtn';
 export default function FragranceFinderStart() {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="flex flex-col items-center my-28 h-auto rounded-md pb-36 bg-sub-bg lg:w-[80%] w-full text-center text-muted lg:text-font-30 md:text-font-24 text-font-20">
+      <div className="flex flex-col items-center sm:my-28 h-auto rounded-md pb-36 bg-sub-bg lg:w-[80%] w-full text-center text-muted lg:text-font-30 md:text-font-24 text-font-20">
         <div className="w-full sm:px-14 px-5 lg:w-[940px]">
           <span className="block pt-36 pb-3 lg:pb-5 font-bold  text-subtitle lg:text-font-64 sm:text-font-48 text-font-30">
             향수 취향 테스트
@@ -24,9 +24,9 @@ export default function FragranceFinderStart() {
           <Image
             src={finder}
             alt="향수"
-            width={670}
-            height={513}
-            className="mx-auto mb-20 object-contain"
+            width={873}
+            height={413}
+            className="mx-auto mb-20 object-contain lg:py-20 md:py-10 py-0"
           />
           <PurpleBtn label="테스트 시작하기" href="/fragrance_finder/1" />
         </div>
