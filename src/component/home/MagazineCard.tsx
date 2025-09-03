@@ -1,21 +1,21 @@
 import Link from 'next/link';
-import React from 'react';
 import Image from 'next/image';
 import { BASE_URL } from '@/app/core/constants/etc';
 import { MagazineCardProps } from '@/app/core/types/magazine';
 
 export default function MagazineCard({ magazines }: MagazineCardProps) {
   return (
-    <div className="overflow-hidden rounded-md shadow-md   ">
-      <Link href={`/magazine/detail/${magazines.id}`}>
+    <Link href={`/magazine/detail/${magazines.id}`}>
+      <div className="relative w-full aspect-[750/428] overflow-hidden rounded-md shadow-md">
         <Image
-          src={BASE_URL + encodeURIComponent(magazines.cover_image)}
+          src={BASE_URL + encodeURIComponent(magazines.cover_image.trim())}
           alt={magazines.title}
-          width={300}
-          height={300}
-          className="min-w-[300px] w-[300px] h-[300px] object-contain hover:scale-110 transition-transform duration-200"
+          fill
+          unoptimized
+          sizes="(max-width: 1099px) 100vw, 50vw"
+          className="object-cover transition duration-300 hover:brightness-110 hover:-translate-y-2"
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }

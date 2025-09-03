@@ -14,31 +14,29 @@ export default function MagazineList() {
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Skeleton w={300} h={300} key={idx} />
-        ))}
+      <div className="flex justify-center aspect-[25/14]">
+        <Skeleton w={320} h={428} />
       </div>
     );
   }
 
-  if (!data) return;
   if (error) return <p>오류 발생: {(error as Error).message}</p>;
+  if (!data || data.length === 0) return null;
 
   return (
-    <div className="mx-auto max-w-[310px] xl:max-w-[1272px] lg:max-w-[946px] md:max-w-[624px]">
+    <div className="mx-auto w-full sm:px-10 md:px-20">
       <Swiper
         modules={[Scrollbar]}
         spaceBetween={24}
         slidesPerView="auto"
         scrollbar={{ draggable: true }}
-        centeredSlides={false}
-        centeredSlidesBounds={false}
         watchOverflow
-        className="magazine-swiper "
       >
         {data.map((mag) => (
-          <SwiperSlide key={mag.id} className="!w-[300px] flex-shrink-0">
+          <SwiperSlide
+            key={mag.id}
+            className="!h-auto !w-full lg:!w-[calc(50%-12px)] mb-8"
+          >
             <MagazineCard magazines={mag} />
           </SwiperSlide>
         ))}

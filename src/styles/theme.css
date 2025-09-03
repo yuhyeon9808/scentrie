@@ -4,6 +4,7 @@
   --breakpoint-sm: 549px;
   --breakpoint-md: 866px;
   --breakpoint-lg: 1150px;
+  --breakpoint-xl: 1580px;
 
   /* Colors */
   --color-primary-p: #1a0e27;
