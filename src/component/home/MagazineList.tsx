@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 
 import MagazineCard from '@/component/home/MagazineCard';
-import Skeleton from '@/component/common/Skeleton';
 import { useMagazines } from '@/app/core/hooks/magazine/useMagazines';
 
 export default function MagazineList() {
@@ -14,8 +13,8 @@ export default function MagazineList() {
 
   if (isLoading) {
     return (
-      <div className="flex justify-center aspect-[25/14]">
-        <Skeleton w={320} h={428} />
+      <div className="relative flex justify-center w-full max-w-[750px] aspect-[750/428]">
+        <div className="w-full bg-primary-w rounded-md animate-pulse" />
       </div>
     );
   }

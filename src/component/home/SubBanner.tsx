@@ -12,7 +12,7 @@ export default function SubBanner() {
           alt="향수 정기 구독"
           fill
           className="object-cover "
-          sizes="100vw"
+          sizes="(max-width: 767px) 100vw"
           priority
         />
         <div className="absolute inset-0 bg-black/70" />

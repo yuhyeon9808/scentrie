@@ -6,15 +6,14 @@ import Link from 'next/link';
 export default function ProductCard({ perfume }: { perfume: Perfume }) {
   return (
     <Link href={`/product/detail/${encodeURIComponent(perfume.id)}`}>
-      <div className="w-[234px] sm:w-[250px] rounded-md bg-primary-w pb-9 text-primary-p shadow-strong ">
+      <div className="w-[234px] sm:w-[250px] rounded-md bg-primary-w pb-9 text-primary-p shadow-strong">
         <div className="flex flex-col items-center transition duration-300 hover:-translate-y-2">
           <Image
             src={BASE_URL + encodeURIComponent(perfume.thumbnail_url.trim())}
             alt={perfume.name}
             width={240}
             height={240}
-            style={{ width: 'auto' }}
-            className="mt-4 h-[240px] object-contain "
+            className="object-contain mt-4"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABAABJzQnCgAAAABJRU5ErkJggg=="
             priority
