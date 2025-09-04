@@ -7,6 +7,8 @@ import { PageNavigator } from '../common/PageNavigator';
 import { useIsAdmin } from '@/app/core/hooks/auth/useIsAdmin';
 import { useMagazines } from '@/app/core/hooks/magazine/useMagazines';
 import MagazineSearchInput from './ui/MagazineSearchInput';
+import Image from 'next/image';
+import { BASE_URL } from '@/app/core/constants/etc';
 
 function MagazineBoardSkeleton() {
   return (
@@ -59,16 +61,18 @@ export default function MagazineBoard({ page }: { page: string }) {
       <div className="flex flex-col items-center sm:py-28 py-14">
         <span className="pb-14 font-medium text-font-48">MAGAZINE</span>
 
-        <div className="mb-7 w-full border-y">
-          <ul className="flex w-full select-text flex-col divide-y">
+        <div className="mb-7 w-full flex justify-center">
+          <ul className="max-w-[1522px] grid lg:grid-cols-2 grid-cols-1 gap-6 ">
             {paginated.map((item) => (
               <li key={item.id}>
-                <Link
-                  href={`/magazine/detail/${encodeURIComponent(item.id)}`}
-                  className="flex justify-between p-5"
-                >
-                  <span>{item.title}</span>
-                  <span className="hidden sm:block">{item.email}</span>
+                <Link href={`/magazine/detail/${encodeURIComponent(item.id)}`}>
+                  <Image
+                    src={BASE_URL + item.cover_image}
+                    alt={item.title}
+                    width={750}
+                    height={428}
+                    className="rounded-md transition duration-300 hover:brightness-110 hover:-translate-y-2"
+                  />
                 </Link>
               </li>
             ))}
