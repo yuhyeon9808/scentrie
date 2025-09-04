@@ -10,35 +10,16 @@ import MagazineSearchInput from './ui/MagazineSearchInput';
 import Image from 'next/image';
 import { BASE_URL } from '@/app/core/constants/etc';
 
-function CardFrame({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="relative aspect-[750/428] w-full rounded-md overflow-hidden">
-      {children}
-    </div>
-  );
-}
-
 function MagazineBoardSkeleton() {
-  const SKELETON_COUNT = 8;
-
   return (
-    <div className="w-full md:px-28">
+    <div className="w-full md:px-28 ">
       <div className="flex flex-col items-center sm:py-28 py-14">
         <span className="pb-14 font-medium text-font-48">MAGAZINE</span>
-
-        <div className="mb-7 w-full flex justify-center">
-          <ul className="max-w-[1522px] grid lg:grid-cols-2 grid-cols-1 gap-6">
-            {Array.from({ length: SKELETON_COUNT }).map((_, i) => (
-              <li key={i}>
-                <CardFrame>
-                  <div className="absolute inset-0 skeleton" />
-                </CardFrame>
-              </li>
-            ))}
-          </ul>
+        <div className="w-full max-w-[1522px] min-h-[1800px]">
+          <div className="skeleton h-full w-full rounded-md" />
         </div>
 
-        <div className="my-10 self-end" />
+        <div className="my-10 self-end"></div>
         <div className="flex">
           <input
             type="text"
