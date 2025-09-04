@@ -26,33 +26,33 @@ export default function MagazineView({ magazine }: MagazineViewProps) {
           <Image
             src={BASE_URL + encodeURIComponent(magazine.cover_image)}
             alt={magazine.title}
-            width={300}
-            height={300}
-            className="pb-5"
+            width={750}
+            height={428}
+            className="pb-7 w-full h-auto max-w-[780px]"
           />
-          {magazine.sub_image_1 && (
-            <Image
-              src={BASE_URL + encodeURIComponent(magazine.sub_image_1)}
-              alt={magazine.title}
-              width={300}
-              height={300}
-              className="pb-5"
-            />
-          )}
 
-          {magazine.sub_image_2 && (
-            <Image
-              src={BASE_URL + encodeURIComponent(magazine.sub_image_2)}
-              alt={magazine.title}
-              width={300}
-              height={300}
-              className="pb-5"
-            />
-          )}
           <div className="whitespace-pre-line leading-6 text-font-20 select-text">
             {magazine.content}
           </div>
 
+          {magazine.sub_image_1 && magazine.sub_image_1 !== 'undefined' ? (
+            <Image
+              src={BASE_URL + encodeURIComponent(magazine.sub_image_1)}
+              alt={magazine.sub_image_1 || ''}
+              width={300}
+              height={300}
+              className="pb-5"
+            />
+          ) : null}
+          {magazine.sub_image_2 && magazine.sub_image_2 !== 'undefined' ? (
+            <Image
+              src={BASE_URL + encodeURIComponent(magazine.sub_image_2)}
+              alt={magazine.sub_image_2 || ''}
+              width={300}
+              height={300}
+              className="pb-5"
+            />
+          ) : null}
           <div className="mt-28 flex justify-end gap-3">
             {isAdmin && (
               <WhiteBtn
@@ -62,6 +62,7 @@ export default function MagazineView({ magazine }: MagazineViewProps) {
                 click={() => deleteMutation.mutate(magazine.id)}
               />
             )}
+
             <BorderBtn label="목록으로" maxW={95} href="/magazine/1" py={1} />
           </div>
         </div>

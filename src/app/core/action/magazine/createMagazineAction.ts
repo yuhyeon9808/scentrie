@@ -61,8 +61,8 @@ export async function createMagazineAction(formData: FormData): Promise<void> {
     title,
     content,
     cover_image: coverFileName,
-    sub_image_1: sub1FileName,
-    sub_image_2: sub2FileName,
+    sub_image_1: sub1FileName || null,
+    sub_image_2: sub2FileName || null,
     email: user.email,
   });
 
