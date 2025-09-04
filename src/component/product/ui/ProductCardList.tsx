@@ -45,6 +45,9 @@ export default function ProductCardList({
     refetchOnWindowFocus: isLimited ? 'always' : false,
   });
 
+  const subscriptionId = 41;
+  const allPerfume = perfumes.filter((item) => item.id !== subscriptionId);
+
   const searchQuery = query?.trim();
 
   const list = React.useMemo(() => {
@@ -96,7 +99,7 @@ export default function ProductCardList({
             style={{ paddingBottom: 70 }}
             className="flex justify-center"
           >
-            {perfumes.map((p) => (
+            {allPerfume.map((p) => (
               <SwiperSlide key={p.id} className="w-full flex justify-center">
                 <ProductCard perfume={p} />
               </SwiperSlide>
