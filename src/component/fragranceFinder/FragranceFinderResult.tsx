@@ -53,7 +53,7 @@ export default function FragranceFinderResult({ item, rec }: Props) {
           <div className="flex flex-col gap-2 font-bold text-subtitle lg:text-font-64 sm:text-font-48 text-font-30">
             <span className="block">{item.code}</span>
             <span className="block">{item.title}</span>
-            <p className="md:text-font-30 sm::text-font-24 sm:text-font-20 text-font-16 text-muted font-medium">
+            <p className="md:text-font-30 sm:text-font-20 text-font-16 text-muted font-medium">
               {item.detail}
             </p>
             <p className="pb-14 md:text-font-24 sm:text-font-20 text-font-16 text-muted font-medium">
